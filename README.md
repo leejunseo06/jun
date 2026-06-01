@@ -1,4 +1,4 @@
-[입대공략_v3_1.html](https://github.com/user-attachments/files/28290061/_v3_1.html)
+[입대공략_refined.html](https://github.com/user-attachments/files/28457428/_refined.html)
 <!DOCTYPE html>
 <html lang="ko">
 <head>
@@ -20,8 +20,8 @@
       --violet: #8b5cf6;
       --orange: #f97316;
       --red: #ef4444;
-      --radius: 24px;
-      --radius-sm: 16px;
+      --radius: 20px;
+      --radius-sm: 12px;
       --shadow: 0 20px 50px rgba(15,23,42,0.08);
       --shadow-sm: 0 8px 24px rgba(15,23,42,0.06);
       --max: 1160px;
@@ -64,10 +64,10 @@
       padding: 9px 13px; border-radius: 999px;
       font-size: 13.5px; font-weight: 800; transition: .15s;
     }
-    .nav-btn:hover { background: #eef2f7; color: var(--text); }
+    .nav-btn:hover { background: #f1f5f9; color: var(--text); }
     .nav-btn.active { background: var(--text); color: white; }
     .mobile-menu-button {
-      display: none; border: 0; background: #eef2f7;
+      display: none; border: 0; background: #f1f5f9;
       border-radius: 12px; width: 40px; height: 40px;
       color: var(--text); align-items: center; justify-content: center;
     }
@@ -148,7 +148,7 @@
     .banner-arrow.next { right: 14px; }
 
     /* ── 레이아웃 ── */
-    .container { max-width: var(--max); margin: 0 auto; padding: clamp(24px,5vw,48px) clamp(18px,4vw,28px); }
+    .container { max-width: var(--max); margin: 0 auto; padding: 40px clamp(18px,4vw,28px); }
     .page { display: none; animation: fadeUp .22s ease both; }
     .page.active { display: block; }
     @keyframes fadeUp { from { opacity:0; transform: translateY(8px); } to { opacity:1; transform:none; } }
@@ -211,7 +211,7 @@
     .btn.blue { background: var(--blue); color: white; box-shadow: 0 12px 28px rgba(49,130,246,.26); }
     .btn.dark { background: var(--text); color: white; }
     .btn.ghost { background: rgba(255,255,255,.1); color: white; border: 1px solid rgba(255,255,255,.18); }
-    .btn.light { background: #eef2f7; color: #334155; }
+    .btn.light { background: #f1f5f9; color: #374151; }
     .btn.light:hover { background: #e2e8f0; }
 
     /* ── 카드 기본 ── */
@@ -223,7 +223,7 @@
     }
     .status-panel { padding: clamp(22px,4vw,30px); display: flex; flex-direction: column; gap: 16px; }
     .icon-box {
-      width: 52px; height: 52px; border-radius: 18px;
+      width: 52px; height: 52px; border-radius: 20px;
       display: grid; place-items: center;
       color: white; background: var(--blue); flex: 0 0 auto;
     }
@@ -242,13 +242,13 @@
     .mini-item {
       display: flex; gap: 10px; align-items: flex-start;
       background: #f8fafc; border-radius: 14px; padding: 12px;
-      color: #334155; font-size: 14px; font-weight: 800;
+      color: #374151; font-size: 14px; font-weight: 800;
     }
 
     /* ── 섹션 헤드 ── */
     .section-head {
       display: flex; align-items: flex-end; justify-content: space-between; gap: 20px;
-      margin: clamp(28px,5vw,48px) 0 16px;
+      margin: 48px 0 18px;
     }
     .eyebrow { margin: 0 0 5px; color: var(--blue); font-size: 12px; font-weight: 900; letter-spacing: .04em; text-transform: uppercase; }
     .section-title {
@@ -281,9 +281,9 @@
     }
     .mood-chip {
       display: flex; align-items: center; gap: 10px; padding: 13px 15px;
-      border-radius: 18px; background: white; border: 1px solid var(--line);
+      border-radius: 20px; background: white; border: 1px solid var(--line);
       box-shadow: 0 4px 14px rgba(15,23,42,.04);
-      color: #334155; font-size: 13.5px; font-weight: 850;
+      color: #374151; font-size: 13.5px; font-weight: 850;
     }
     .dot { width: 10px; height: 10px; border-radius: 50%; background: var(--blue); flex: 0 0 auto; }
     .dot.green { background: var(--green); }
@@ -296,12 +296,12 @@
     .checklist { display: grid; gap: 8px; margin-top: 16px; }
     .check-item {
       display: flex; align-items: center; gap: 10px; background: #f8fafc;
-      border-radius: 14px; padding: 12px 14px; color: #334155; font-size: 14px; font-weight: 800;
+      border-radius: 14px; padding: 12px 14px; color: #374151; font-size: 14px; font-weight: 800;
       transition: background .15s;
     }
     .check-item:hover { background: #f1f5f9; }
     .check-item input { width: 18px; height: 18px; accent-color: var(--blue); flex: 0 0 auto; }
-    .progress-wrap { margin-top: 16px; background: #eef2f7; border-radius: 999px; height: 10px; overflow: hidden; }
+    .progress-wrap { margin-top: 16px; background: #f1f5f9; border-radius: 999px; height: 10px; overflow: hidden; }
     .progress-bar { height: 100%; width: 0%; background: var(--blue); border-radius: 999px; transition: width .3s ease; }
     .progress-text { font-size: 13px; color: var(--muted); font-weight: 750; margin-top: 8px; }
 
@@ -313,8 +313,8 @@
     .search-box input { border: 0; background: transparent; outline: none; width: 100%; font-weight: 800; color: var(--text); font-size: 14px; }
     .update-list { display: grid; gap: 10px; }
     .update-card {
-      background: #f8fafc; border: 1px solid #edf2f7;
-      border-radius: 18px; padding: 16px; transition: .15s;
+      background: #f8fafc; border: 1px solid #f1f5f9;
+      border-radius: 20px; padding: 16px; transition: .15s;
     }
     .update-card:hover { background: #f1f5f9; }
     .update-top { display: flex; justify-content: space-between; gap: 12px; align-items: center; margin-bottom: 8px; }
@@ -385,7 +385,7 @@
     .meter { height: 10px; border-radius: 999px; background: #f1f5f9; overflow: hidden; margin-bottom: 13px; }
     .meter span { display: block; height: 100%; width: var(--w); background: var(--blue); border-radius: 999px; transition: width .6s ease; }
     .source-note {
-      background: white; border: 1px solid var(--line); border-radius: 18px;
+      background: white; border: 1px solid var(--line); border-radius: 20px;
       padding: 16px 18px; color: var(--muted); line-height: 1.65; font-size: 13px; font-weight: 650; margin-top: 16px;
     }
     .source-note strong { color: var(--text); }
@@ -409,13 +409,13 @@
     .ex-label { font-size: 11px; color: var(--subtle); }
     .record-input {
       width: 62px; padding: 6px 8px; border: 1px solid #e5e7eb;
-      border-radius: 8px; font-size: 13px; text-align: center;
+      border-radius: 12px; font-size: 13px; text-align: center;
       background: #f8fafc; margin-top: 4px; color: var(--text);
     }
     .record-input:focus { outline: none; border-color: var(--blue); }
     .ai-form { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 16px; }
     .ai-form-group { display: flex; flex-direction: column; gap: 6px; }
-    .ai-form-group label { font-size: 13px; font-weight: 800; color: #334155; }
+    .ai-form-group label { font-size: 13px; font-weight: 800; color: #374151; }
     .ai-form-group input, .ai-form-group select {
       padding: 11px 13px; border: 1px solid var(--line); border-radius: 12px;
       font-size: 14px; background: #f8fafc; color: var(--text); transition: .15s;
@@ -435,7 +435,7 @@
     }
     .floating-back.show { display: inline-flex; }
     .floating-back:hover { transform: translateY(-2px); }
-    .empty { border: 1px dashed #cbd5e1; border-radius: 18px; padding: 24px; text-align: center; color: #64748b; font-weight: 850; background: #f8fafc; }
+    .empty { border: 1px dashed #cbd5e1; border-radius: 20px; padding: 24px; text-align: center; color: #64748b; font-weight: 850; background: #f8fafc; }
 
     /* ── 다크모드 ── */
     .body-dark {
@@ -470,13 +470,13 @@
 
     /* ── 프로필 ── */
     .stat-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%,160px), 1fr)); gap: 10px; margin-top: 20px; }
-    .stat-card { background: #f8fafc; border-radius: 18px; padding: 16px; border: 1px solid #edf2f7; }
+    .stat-card { background: #f8fafc; border-radius: 20px; padding: 16px; border: 1px solid #f1f5f9; }
     .stat-number { font-size: 26px; font-weight: 950; letter-spacing: -.05em; margin: 0; }
     .stat-label { margin: 4px 0 0; color: var(--muted); font-size: 12.5px; font-weight: 850; }
-    .avatar { width: clamp(68px,10vw,96px); height: clamp(68px,10vw,96px); border-radius: 28px; display: grid; place-items: center; background: var(--blue); color: #fff; font-size: clamp(26px,4vw,38px); font-weight: 950; }
+    .avatar { width: clamp(68px,10vw,96px); height: clamp(68px,10vw,96px); border-radius: 20px; display: grid; place-items: center; background: var(--blue); color: #fff; font-size: clamp(26px,4vw,38px); font-weight: 950; }
     .profile-head { display: flex; align-items: center; gap: 18px; flex-wrap: wrap; }
     .form-group { display: grid; gap: 7px; margin-top: 14px; }
-    .form-label { font-size: 13px; font-weight: 900; color: #334155; }
+    .form-label { font-size: 13px; font-weight: 900; color: #374151; }
     .form-input, .form-select { width: 100%; border: 1px solid var(--line); background: #f8fafc; border-radius: 14px; padding: 13px 15px; outline: none; color: var(--text); font-weight: 800; transition: .15s; }
     .form-input:focus, .form-select:focus { border-color: var(--blue); background: white; box-shadow: 0 0 0 4px rgba(49,130,246,.1); }
 
@@ -502,12 +502,35 @@
 
     /* ── 마이페이지 ── */
     .stat-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%,160px), 1fr)); gap: 10px; margin-top: 20px; }
-    .stat-card { background: #f8fafc; border-radius: 18px; padding: 18px; border: 1px solid #edf2f7; }
+    .stat-card { background: #f8fafc; border-radius: 20px; padding: 18px; border: 1px solid #f1f5f9; }
     .stat-number { font-size: 26px; font-weight: 950; letter-spacing: -.05em; margin: 0; }
     .stat-label { margin: 4px 0 0; color: var(--muted); font-size: 12.5px; font-weight: 850; }
-    .avatar { width: clamp(64px,10vw,90px); height: clamp(64px,10vw,90px); border-radius: 26px; display: grid; place-items: center; background: var(--blue); color: #fff; font-size: clamp(24px,4vw,36px); font-weight: 950; }
+    .avatar { width: clamp(64px,10vw,90px); height: clamp(64px,10vw,90px); border-radius: 20px; display: grid; place-items: center; background: var(--blue); color: #fff; font-size: clamp(24px,4vw,36px); font-weight: 950; }
     .profile-head { display: flex; align-items: center; gap: 18px; flex-wrap: wrap; }
     .body-dark .stat-card { background: #0f172a; border-color: #1f2937; }
+  
+    .hero-stats {
+      position: relative; z-index: 2;
+      display: flex; align-items: center;
+      background: rgba(255,255,255,.09);
+      border: 1px solid rgba(255,255,255,.15);
+      border-radius: 16px; padding: 14px 20px;
+      margin: 20px 0 24px; width: fit-content; gap: 0;
+    }
+    .hero-stat { display: flex; flex-direction: column; align-items: center; gap: 3px; padding: 0 18px; }
+    .hero-stat:first-child { padding-left: 0; }
+    .hero-stat:last-child  { padding-right: 0; }
+    .hero-stat-num  { font-size: 22px; font-weight: 950; color: white; letter-spacing: -.04em; line-height: 1; }
+    .hero-stat-label{ font-size: 11px; color: rgba(255,255,255,.65); font-weight: 700; white-space: nowrap; }
+    .hero-stat-divider { width: 1px; height: 32px; background: rgba(255,255,255,.2); flex-shrink: 0; }
+  
+    .ai-form-guide {
+      display: flex; align-items: flex-start; gap: 8px;
+      background: #eff6ff; border: 1px solid #bfdbfe;
+      border-radius: 12px; padding: 11px 14px;
+      font-size: 13px; font-weight: 750; color: #1d4ed8;
+      margin-bottom: 14px; line-height: 1.55;
+    }
   </style>
 </head>
 <body>
@@ -604,7 +627,13 @@
           <div class="eyebrow-pill"><span data-icon="sparkles"></span> 피할 수 없다면, 준비하라</div>
           <h1 class="hero-title">입대부터<br>체력준비까지,<br><em>쉽게.</em></h1>
           <p class="hero-desc">병무청에서 찾기 힘든 최신 입대 정보와 군별 체력검정 기준에 맞춘 AI 트레이닝 플랜을 한 곳에서 확인하세요.</p>
-          <div class="soft-note"><span data-icon="info"></span> 낯선 시작을 조금 더 단단하게 준비하는 공간</div>
+          <div class="hero-stats">
+            <div class="hero-stat"><span class="hero-stat-num">3</span><span class="hero-stat-label">정보 카테고리</span></div>
+            <div class="hero-stat-divider"></div>
+            <div class="hero-stat"><span class="hero-stat-num">4</span><span class="hero-stat-label">군별 트레이닝</span></div>
+            <div class="hero-stat-divider"></div>
+            <div class="hero-stat"><span class="hero-stat-num">AI</span><span class="hero-stat-label">맞춤 플랜</span></div>
+          </div>
           <div class="hero-actions">
             <button class="btn primary" data-route="enlistment">입대 정보 보기 <span data-icon="chevron"></span></button>
             <button class="btn ghost" data-route="training">체력훈련 시작 <span data-icon="activity"></span></button>
@@ -833,17 +862,18 @@
       <!-- AI 플랜 생성 -->
       <div class="section-head"><div><p class="eyebrow">AI Training</p><h2 class="section-title">AI 맞춤 트레이닝 플랜</h2><p class="section-desc">키, 몸무게, 지원 군을 입력하면 AI가 플랜을 생성합니다.</p></div></div>
       <div class="white-box">
-        <div class="ai-form">
+        <div class="ai-form-guide"><span>✨</span> 내 정보를 입력하면 AI가 군별 체력검정 기준에 맞는 맞춤 플랜을 생성합니다.</div>
+          <div class="ai-form">
           <div class="ai-form-group">
-            <label>키 (cm)</label>
+            <label>📏 키 (cm)</label>
             <input type="number" id="aiHeight" placeholder="175" min="140" max="220" />
           </div>
           <div class="ai-form-group">
-            <label>몸무게 (kg)</label>
+            <label>⚖️ 몸무게 (kg)</label>
             <input type="number" id="aiWeight" placeholder="70" min="40" max="150" />
           </div>
           <div class="ai-form-group">
-            <label>지원 군</label>
+            <label>🪖 지원 군</label>
             <select id="aiBranch">
               <option value="army">육군</option>
               <option value="navy">해군</option>
@@ -852,7 +882,7 @@
             </select>
           </div>
           <div class="ai-form-group">
-            <label>입대까지 남은 기간</label>
+            <label>📅 입대까지 남은 기간</label>
             <select id="aiPeriod">
               <option value="1">1개월</option>
               <option value="2" selected>2개월</option>
@@ -1284,18 +1314,115 @@
     }
 
     function saveRecord() {
-      const pushup = document.getElementById("rec-pushup")?.value;
-      const situp = document.getElementById("rec-situp")?.value;
-      const run = document.getElementById("rec-run")?.value;
-      if (!pushup && !situp && !run) {
+      const pushupVal = parseInt(document.getElementById("rec-pushup")?.value) || 0;
+      const situpVal  = parseInt(document.getElementById("rec-situp")?.value)  || 0;
+      const runVal    = parseInt(document.getElementById("rec-run")?.value)    || 0;
+
+      if (!pushupVal && !situpVal && !runVal) {
         alert("실제 횟수를 먼저 입력해주세요!");
         return;
       }
-      const record = {date: new Date().toLocaleDateString("ko-KR"), pushup, situp, run};
+
+      const branch  = document.getElementById("aiBranch").value;
+      const period  = document.getElementById("aiPeriod").value;
+      const data    = trainingData[branch];
+      const multi   = period==="1"?0.7:period==="3"?1.15:period==="6"?1.3:1;
+      const tPushup = Math.round(data.plan.pushup * multi);
+      const tSitup  = Math.round(data.plan.situp  * multi);
+
+      const rates = [];
+      if (pushupVal && tPushup) rates.push(pushupVal / tPushup);
+      if (situpVal  && tSitup)  rates.push(situpVal  / tSitup);
+      const avg = rates.length ? rates.reduce((a,b)=>a+b,0)/rates.length : 0;
+      const pct = Math.round(avg * 100);
+
+      // 등급별 설정
+      let svgImg, gradColor1, gradColor2, bgColor, borderColor, headline, message, nextPushup, nextSitup;
+
+      if (avg >= 0.9) {
+        // 🏆 완벽 - 트로피 SVG
+        svgImg = `<svg width="96" height="96" viewBox="0 0 96 96" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="48" cy="48" r="48" fill="#FEF9C3"/>
+          <path d="M30 24h36v28c0 9.94-8.06 18-18 18s-18-8.06-18-18V24z" fill="#FBBF24"/>
+          <path d="M30 24h36v8H30V24z" fill="#F59E0B"/>
+          <rect x="42" y="70" width="12" height="8" fill="#F59E0B"/>
+          <rect x="34" y="78" width="28" height="5" rx="2.5" fill="#FBBF24"/>
+          <path d="M30 36H20c0 8 4 14 10 16V36zM66 36h10c0 8-4 14-10 16V36z" fill="#FCD34D"/>
+          <circle cx="48" cy="46" r="8" fill="#FEF3C7"/>
+          <path d="M48 40l2 5h5l-4 3 2 5-5-3-5 3 2-5-4-3h5l2-5z" fill="#F59E0B"/>
+        </svg>`;
+        gradColor1="#065f46"; gradColor2="#d1fae5";
+        bgColor="#f0fdf4"; borderColor="#6ee7b7";
+        headline = "완벽해요! 이대로만 하면 됩니다 💪";
+        message = `목표의 ${pct}%를 달성했어요. 현재 페이스를 유지하면 합격 기준을 충분히 넘길 수 있어요. 다음 주는 강도를 조금 높여볼게요!`;
+        nextPushup = Math.round(tPushup * 1.1);
+        nextSitup  = Math.round(tSitup  * 1.1);
+
+      } else if (avg >= 0.6) {
+        // 👍 보통 - 엄지 SVG
+        svgImg = `<svg width="96" height="96" viewBox="0 0 96 96" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="48" cy="48" r="48" fill="#FFF7ED"/>
+          <path d="M52 22c0-3-2-5-4-5-3 0-4 2-4 5 0 4-2 10-8 14v26h28c2 0 4-2 4-4 0-1 0-2-1-3 2-1 3-2 3-4 0-1 0-2-1-3 2-1 3-3 3-5 0-2-2-4-4-4H52c2-4 4-9 4-12 0-2 0-5-4-5z" fill="#FB923C"/>
+          <rect x="24" y="50" width="12" height="26" rx="4" fill="#FDBA74"/>
+        </svg>`;
+        gradColor1="#92400e"; gradColor2="#fef3c7";
+        bgColor="#fffbeb"; borderColor="#fcd34d";
+        headline = "잘 하고 있어요! 조금만 더 밀어붙여요";
+        message = `목표의 ${pct}%를 달성했어요. 나쁘지 않은 출발이에요. 매일 2~3회씩 횟수를 늘려가면 금방 목표에 도달할 수 있어요.`;
+        nextPushup = Math.round(tPushup * 1.05);
+        nextSitup  = Math.round(tSitup  * 1.05);
+
+      } else {
+        // 🔥 노력 필요 - 불꽃 SVG
+        svgImg = `<svg width="96" height="96" viewBox="0 0 96 96" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="48" cy="48" r="48" fill="#FFF1F2"/>
+          <path d="M48 18c0 0 4 8 2 14 6-4 8-12 8-12s6 8 4 18c4-2 6-8 6-8s4 10 0 20c-4 10-12 16-20 16s-20-8-20-20c0-8 4-14 4-14s2 6 6 8c-2-8 2-16 10-22z" fill="#EF4444"/>
+          <path d="M48 44c0 0 2 4 0 8 3-2 4-6 4-6s2 4 0 10c-2 4-6 6-8 4-2-2-2-6 0-10 1-2 4-6 4-6z" fill="#FCA5A5"/>
+        </svg>`;
+        gradColor1="#7f1d1d"; gradColor2="#fee2e2";
+        bgColor="#fff1f2"; borderColor="#fca5a5";
+        headline = "아직 갈 길이 있어요, 포기하지 마세요!";
+        message = `목표의 ${pct}%를 달성했어요. 처음엔 누구나 힘들어요. 오늘 횟수 기준으로 매일 1~2회씩만 늘려가면 충분히 따라잡을 수 있어요.`;
+        nextPushup = Math.max(pushupVal + 2, Math.round(tPushup * 0.7));
+        nextSitup  = Math.max(situpVal  + 2, Math.round(tSitup  * 0.7));
+      }
+
+      // 기록 저장
       const records = JSON.parse(localStorage.getItem("trainingRecords") || "[]");
-      records.push(record);
+      records.push({ date: new Date().toLocaleDateString("ko-KR"), pushup: pushupVal, situp: situpVal, run: runVal });
       localStorage.setItem("trainingRecords", JSON.stringify(records));
-      alert(`기록이 저장되었습니다! 💪\n팔굽혀펴기: ${pushup || "-"}회 | 윗몸: ${situp || "-"}회 | 달리기: ${run || "-"}분`);
+
+      // 결과 UI 렌더
+      const box = document.getElementById("aiPlanResult");
+      box.innerHTML = `
+        <div style="text-align:center; padding:20px 0 16px;">
+          <div style="display:inline-flex; align-items:center; justify-content:center; width:96px; height:96px; margin:0 auto 16px;">
+            ${svgImg}
+          </div>
+          <div style="background:${bgColor}; border:1.5px solid ${borderColor}; border-radius:18px; padding:20px; margin-bottom:16px; text-align:left;">
+            <h3 style="margin:0 0 8px; font-size:17px; font-weight:950; color:${gradColor1}; letter-spacing:-.03em;">${headline}</h3>
+            <p style="margin:0; font-size:13.5px; color:#374151; font-weight:700; line-height:1.7;">${message}</p>
+          </div>
+        </div>
+        <p style="margin:0 0 10px; font-size:12px; font-weight:900; color:var(--blue); letter-spacing:.05em; text-transform:uppercase;">📋 다음 목표 플랜</p>
+        <div class="exercise-item">
+          <div class="ex-left"><h4>팔굽혀펴기</h4><p>다음 목표 횟수</p></div>
+          <div class="ex-right"><div class="ex-target">${nextPushup}회</div><div class="ex-label">목표</div></div>
+        </div>
+        <div class="exercise-item">
+          <div class="ex-left"><h4>윗몸일으키기</h4><p>다음 목표 횟수</p></div>
+          <div class="ex-right"><div class="ex-target">${nextSitup}회</div><div class="ex-label">목표</div></div>
+        </div>
+        <div class="exercise-item">
+          <div class="ex-left"><h4>3km 달리기</h4><p>꾸준한 페이스 유지</p></div>
+          <div class="ex-right"><div class="ex-target">${data.plan.run}</div><div class="ex-label">목표</div></div>
+        </div>
+        <button class="btn blue" style="width:100%; margin-top:14px; padding:14px;" onclick="generateAIPlan()">
+          새 플랜 다시 생성하기
+        </button>`;
+
+      box.style.display = "block";
+      box.scrollIntoView({ behavior:"smooth", block:"nearest" });
     }
 
     /* ── 입대 정보 탭 ── */
