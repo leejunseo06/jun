@@ -1,4 +1,4 @@
-[입대공략_refined.html](https://github.com/user-attachments/files/28457428/_refined.html)
+[입대공략_final.html](https://github.com/user-attachments/files/28662101/_final.html)
 <!DOCTYPE html>
 <html lang="ko">
 <head>
@@ -225,12 +225,12 @@
     .icon-box {
       width: 52px; height: 52px; border-radius: 20px;
       display: grid; place-items: center;
-      color: white; background: var(--blue); flex: 0 0 auto;
+      color: #2563eb; background: #dbeafe; flex: 0 0 auto;
     }
-    .icon-box.green { background: var(--green); }
-    .icon-box.violet { background: var(--violet); }
-    .icon-box.orange { background: var(--orange); }
-    .icon-box.red { background: var(--red); }
+    .icon-box.green  { background: #d1fae5; color: #059669; }
+    .icon-box.violet { background: #ede9fe; color: #7c3aed; }
+    .icon-box.orange { background: #ffedd5; color: #ea580c; }
+    .icon-box.red    { background: #ffe4e6; color: #e11d48; }
     .label { margin: 0; color: var(--subtle); font-size: 12px; font-weight: 900; letter-spacing: .03em; }
     .panel-title, .card-title { margin: 0; font-weight: 950; letter-spacing: -.045em; }
     .panel-title { font-size: clamp(22px,3vw,30px); }
@@ -648,7 +648,7 @@
             <div class="mini-item"><span data-icon="check"></span> 준비물과 반입 가능 품목 확인</div>
             <div class="mini-item"><span data-icon="check"></span> 4주 기초체력 루틴 시작</div>
           </div>
-          <button class="btn blue" data-route="enlistment">입대 정보로 이동 <span data-icon="chevron"></span></button>
+          <button class="btn blue" style="align-self:flex-start; padding:12px 22px;" data-route="enlistment">입대 정보로 이동 <span data-icon="chevron"></span></button>
         </aside>
       </div>
 
@@ -891,7 +891,7 @@
             </select>
           </div>
         </div>
-        <button class="btn blue" style="width:100%;padding:15px;" onclick="generateAIPlan()">
+        <button class="btn blue" style="padding:12px 24px;" onclick="generateAIPlan()">
           <span data-icon="sparkles"></span> AI 플랜 생성하기
         </button>
         <div class="ai-plan-box" id="aiPlanResult" style="display:none;">
@@ -1047,7 +1047,7 @@
             <span class="form-label">입대 예정일 (또는 입대일)</span>
             <input class="form-input" id="enlistDate" type="date">
           </label>
-          <button class="btn blue" id="saveProfile" style="width:100%;margin-top:18px;padding:14px;">
+          <button class="btn blue" id="saveProfile" style="margin-top:18px; padding:12px 24px;">
             <span data-icon="check"></span> 저장하기
           </button>
           <p id="saveMsg" style="text-align:center;font-size:13px;color:var(--green);font-weight:800;margin-top:10px;display:none;">✅ 저장되었습니다!</p>
